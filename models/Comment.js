@@ -11,7 +11,7 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    comment_content: {
+    content: {
       type: DataTypes.TEXT,
       // Validates that the comment is at least 2 characters long, I can't see a scenario where a single letter comment would be useful/constructive
       validate: {
