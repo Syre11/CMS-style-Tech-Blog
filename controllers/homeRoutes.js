@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  if(req.session.logged_in) {
+  if(req.session.loggedIn) {
     res.redirect('/');
     return;
   }
@@ -101,7 +101,7 @@ router.get('/post-comments', async (req, res) => {
     }
     const posts = postData.map(post => post.get({ plain: true }));
 
-    res.render('post-comments', { posts, logged_in: req.session.logged_in });
+    res.render('post-comments', { posts, loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
   }

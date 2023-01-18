@@ -32,7 +32,7 @@ You are now ready to start your server, do so using:
 
 ## Usage
 
-Please see live application [here](INSERT URL).
+Please see live application ![here](INSERT URL).
 
 ![Screenshot of blog page](***********/ASSETS/SCREENSHOT.PNG***********)
 

@@ -26,7 +26,7 @@ router.get('/', withAuth, async (req, res) => {
     });
     const posts = postData.map(post => post.get({ plain: true }));
 
-    res.render('dashboard', { posts, logged_in: true });
+    res.render('dashboard', { posts, loggedIn: true });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -60,7 +60,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
     }
     const posts = postData.get({ plain: true });
 
-    res.render('edit-post', { posts, logged_in: true });
+    res.render('edit-post', { posts, loggedIn: true });
   } catch (err) {
     res.status(500).json(err);
   }
