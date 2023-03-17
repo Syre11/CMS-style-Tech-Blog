@@ -40,6 +40,12 @@ async function signupFormHandler(event) {
   }
 };
 
-document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+const login = document.querySelector('.login-form')
+if(login) {
+  login.addEventListener('submit', loginFormHandler);
+}
 
-document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+const signup = document.querySelector('.signup-form')
+if(signup) {
+  signup.addEventListener('submit', signupFormHandler);
+}
